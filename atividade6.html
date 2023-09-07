@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Página de Java Script, usando operadores matemáticos">
+    <meta name="keywords" content="Java Script, operadores matemáticos, codar"> 
+    <meta name="author" content="Gleyce Pereira">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="pc.png">
+    <title>Hora de Codar 2</title>
+
+</head>
+
+<body>
+    <div class="page">
+        <script>
+            // 6 - Escreva um programa para ler 2 notas de um aluno, calcular e imprimir a média final. Considere que a nota de aprovação é 9,5. Logo após escrever a mensagem "Calcular a média de outro aluno Sim/Não?" e solicitar um resposta. Se a resposta for "S", o programa deve ser executado novamente, caso contrário deve ser encerrado exibindo a quantidade de alunos aprovados.
+
+            var alunosAprovados= 0;
+
+            while(true){
+                alert("Informe a seguir 2 notas do seu aluno")
+
+                var num1 = parseFloat(prompt("Informe a primeira nota:"));
+                var num2 = parseFloat(prompt("Informe a segunda nota:"));
+
+
+                if (num1 >=0 && num1 <=10 && num2 >=0 && num2 <=10){
+                    var media = (num1+num2) / 2;
+                    alert("Média de: " + media);
+
+                    if (media >= 9.5){
+                        alert("Você foi aprovado");
+                        alunosAprovados++
+                    }else{
+                        alert("Você foi reprovado");
+                    }
+
+                    var continuar = prompt("Calcular a média de outro aluno? (S/N)");
+
+                    if (continuar !== "S" && continuar !== "s") {
+                        break; // Encerra o loop se a resposta não for "S" ou "s"
+                    }
+                }
+                
+            }
+
+            document.write("Alunos aprovados: " + alunosAprovados);
+
+        </script>
+    </div>
+
+    <p class="e"><a class="back" href="index.html"> Voltar </a></p>
+
+</body>
+
+</html>

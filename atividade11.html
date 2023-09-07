@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Página de Java Script, usando operadores matemáticos">
+    <meta name="keywords" content="Java Script, operadores matemáticos, codar"> 
+    <meta name="author" content="Gleyce Pereira">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="pc.png">
+    <title>Hora de Codar 2</title>
+
+</head>
+
+<body>
+    <div class="page">
+        <script>
+            // 11 - Escreva um programa em que o usuário informe 10 valores e escreva quantos desses valores lidos estão entre os 
+            // números 24 e 42 (incluindo os valores 24 e 42) e quantos deles estão fora deste intervalo.
+
+
+            var valoresEntre = 0;
+            var valoresFora = 0;
+
+            for (var inicio = 0; inicio < 10; inicio++) {
+                var valor = parseFloat(prompt("Informe um valor:"));
+
+                if (!isNaN(valor)) { // Verifica se o valor é um número válido
+                    if (valor >= 24 && valor <= 42) {
+                        valoresEntre++;
+                    } else {
+                        valoresFora++;
+                    }
+                } else {
+                    alert("Por favor, informe um número válido.");
+                    inicio--; // Decrementa o contador para repetir a entrada inválida
+                }
+            }
+
+            document.write("Valores entre 24 e 42: " + valoresEntre + "<br>");
+            document.write("Valores fora do intervalo entre 24 e 42: " + valoresFora);
+
+
+        </script>
+    </div>
+
+    <p class="e"><a class="back" href="index.html"> Voltar </a></p>
+
+</body>
+
+</html>

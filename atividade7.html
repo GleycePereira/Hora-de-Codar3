@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Página de Java Script, usando operadores matemáticos">
+    <meta name="keywords" content="Java Script, operadores matemáticos, codar"> 
+    <meta name="author" content="Gleyce Pereira">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="pc.png">
+    <title>Hora de Codar 2</title>
+
+</head>
+
+<body>
+    <div class="page">
+        <script>
+            // 7 - Escreva um algoritmo para ler as notas de avaliações de um aluno, calcule e imprima a média (simples) desse aluno. Só devem ser aceitos valores válidos durante a leitura (0 a 10) para cada nota. São 6 notas ao total. Caso o valor informado para qualquer uma das notas esteja fora do limite estabelecido, deve ser solicitado um novo valor ao usuário. 
+
+            alert("Informe a seguir 6 notas do aluno");
+            var notas = [];
+            var soma = 0;
+
+            for (var inicio = 1; inicio <= 6; inicio++) {
+                var nota;   //Declara uma variável nota para armazenar temporariamente a nota digitada pelo usuário.
+
+                do { 
+                    nota = parseFloat(prompt("Digite a nota "));
+                } while (isNaN(nota) || nota < 0 || nota > 10);
+
+                notas.push(nota);
+                soma += nota; // Adiciona a nota diretamente à soma
+            }
+
+            var media = Math.round(soma / notas.length);
+
+            document.write("A média das notas é: " + media);
+
+
+        </script>
+    </div>
+
+    <p class="e"><a class="back" href="index.html"> Voltar </a></p>
+
+</body>
+
+</html>

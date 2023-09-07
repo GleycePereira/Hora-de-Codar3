@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Página de Java Script, usando operadores matemáticos">
+    <meta name="keywords" content="Java Script, operadores matemáticos, codar"> 
+    <meta name="author" content="Gleyce Pereira">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="pc.png">
+    <title>Hora de Codar 2</title>
+
+</head>
+
+<body>
+    <div class="page">
+        <script>
+
+            // 8 - Ler um valor N e imprimir todos os valores inteiros entre 1 (inclusive) e N (inclusive). Considere que o N será sempre maior que ZERO.
+            // N  é um valor informado pelo usuário
+            
+            var n = parseInt(prompt("Digite um valor para:"));
+
+            if (n > 0) {
+                document.write("Números inteiros entre 1 e o valor escolhido <br>");
+                for (var inicio = 1; inicio <= n; inicio++) {
+                    // document.write("Números inteiros entre 1 e o valor escolhido <br>")
+                    document.write(inicio + "<br>");
+                }
+            } else {
+                document.write("O valor deve ser maior que zero.");
+            }
+
+
+        </script>
+    </div>
+
+    <p class="e"><a class="back" href="index.html"> Voltar </a></p>
+
+</body>
+
+</html>

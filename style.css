@@ -1,0 +1,56 @@
+body{
+    background-image: url("wallpaper.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 30px;
+    font-weight: bold;
+
+
+
+}
+
+li{
+    padding: 10px;
+    list-style-type:square;
+    color: white;
+}
+
+main{
+    max-width: 800px;
+    margin: auto;
+}
+
+.page{
+    color: white;
+    margin: 50px 10px 0 100px;
+}
+
+.e{
+    background-color: rgba(69, 116, 245, 0.349);
+    /* height: 35px;
+    margin: 400px 20px 0 0; */
+    padding: 5px;
+
+    position: fixed;
+    bottom: 0;
+    right: 5px;
+
+    border: 3px solid black;
+    border-radius: 10px;
+}
+
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+a:visited{
+    text-decoration: none;
+}
+
+
+
+

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Página de Java Script, usando operadores matemáticos">
+    <meta name="keywords" content="Java Script, operadores matemáticos, codar"> 
+    <meta name="author" content="Gleyce Pereira">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="pc.png">
+    <title>Hora de Codar 2</title>
+
+</head>
+
+<body>
+    <div class="page">
+        <script>
+            // 10-Escreva um programa para imprimir todas as tabuadas de 1 a N. N será informado pelo usuário.
+
+
+            var n = parseInt(prompt("Informe um número"));
+
+            var inicio = 1;
+            var multplicacao = 1;
+
+            if (n >= 1) {
+                while (inicio <= n) {
+                    document.write("Tabuada do " + inicio + "<br>");
+                    
+                    while (multplicacao <= 10) {
+                        var resultado = inicio * multplicacao;
+                        
+                        console.log(inicio + " x " + multplicacao + " = " + resultado);
+                        multplicacao++;
+                    }
+
+                    console.log("");
+                    
+                    inicio++; // Incrementa para o próximo número na tabuada
+                    multplicacao = 1; // Reinicia o contador para a próxima tabuada
+                }
+            } else {
+                document.write("Digite um valor maior que 0");
+            }
+
+            
+
+        </script>
+    </div>
+
+    <p class="e"><a class="back" href="index.html"> Voltar </a></p>
+
+</body>
+
+</html>
