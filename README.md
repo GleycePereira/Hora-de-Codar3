@@ -4,3 +4,4 @@ A lógica de programação é a base fundamental da programação de computadore
 A hora de codar 3 traz mais desafios para desenvolver nosso lado programador, dessa vez as atividades teve um tom desafiador mais elevado, tivemos que colocar a mente de programador em jogo, aprendendo a codar com várias ferramentas com while, for e array 
 
 # Acesse a página aqui
+https://gleycepereira.github.io/Hora-de-Codar3/
